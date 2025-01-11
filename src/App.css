@@ -1,0 +1,126 @@
+/* General container styling */
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #121212; /* Dark background */
+  color: white; /* White text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 400px;
+  text-align: center;
+  background-color: #1e1e1e; /* Darker container */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Title styling */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff; /* White text for title */
+}
+
+/* Input and button container */
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Wrap input and button for small screens */
+}
+
+/* Input field styling */
+.input-field {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #444; /* Dark border */
+  border-radius: 5px;
+  outline: none;
+  flex: 1; /* Adjust width for responsiveness */
+  margin-bottom: 10px; /* Add space below input field for smaller screens */
+  min-width: 60%; /* Ensure input field has a minimum width */
+  background-color: #333; /* Dark background for input */
+  color: white; /* White text in input field */
+}
+
+.input-field:focus {
+  border-color: #007bff;
+}
+
+/* Add button styling */
+.add-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Adjust button for smaller screens */
+@media (max-width: 600px) {
+  .add-button {
+    margin-left: 0; /* Remove margin between input and button */
+    width: 100%; /* Button takes full width */
+  }
+}
+
+/* Item list styling */
+.item-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  background-color: #333; /* Dark background for list items */
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #444;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+/* Add hover effect for list items */
+.list-item:hover {
+  background-color: #444; /* Lighter background on hover */
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 768px) {
+  .container {
+    max-width: 500px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .input-field {
+    font-size: 18px;
+  }
+
+  .add-button {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+
+  .list-item {
+    font-size: 18px;
+  }
+}
