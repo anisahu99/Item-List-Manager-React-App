@@ -10,7 +10,7 @@ Item List Manager is a simple React application that allows users to add, view, 
 - Dark theme with a responsive design for both mobile and desktop screens.
 
 ## Demo
-You can try the live demo of the app at [link-to-your-demo](#).
+You can try the live demo of the app at [https://item-list-manager-react-app.vercel.app/](#).
 
 ## Installation
 
